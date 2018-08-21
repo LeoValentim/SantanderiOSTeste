@@ -31,8 +31,11 @@ class FormTableViewController: UITableViewController {
 }
 
 extension FormTableViewController: FormPresenterDelegate {
-    func didValidateFields() {
+    func didValidateFields(_ isValid: Bool) {
         self.tableView.reloadData()
+        if isValid {
+            self.performSegue(withIdentifier: "TabBarController", sender: self)
+        }
     }
     
     func didShowHideCell() {

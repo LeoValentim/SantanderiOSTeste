@@ -10,7 +10,7 @@ import UIKit
 
 protocol FormPresenterDelegate: NSObjectProtocol {
     func didShowHideCell()
-    func didValidateFields()
+    func didValidateFields(_ isValid: Bool)
 }
 
 class FormPresenter: NSObject {
@@ -85,11 +85,7 @@ class FormPresenter: NSObject {
             }
         })
         
-        delegate?.didValidateFields()
-        
-        if isValid {
-            
-        }
+        delegate?.didValidateFields(isValid)
     }
     
     func registerTableCells(for tableView: UITableView) {
