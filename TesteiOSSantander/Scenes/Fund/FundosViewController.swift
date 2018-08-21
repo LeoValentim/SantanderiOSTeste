@@ -57,6 +57,7 @@ class FundosViewController: UIViewController, FundPresenterDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.shadowImage = UIImage()
         
         presenter.delegate = self
         tableView.dataSource = presenter
@@ -90,7 +91,7 @@ class FundosViewController: UIViewController, FundPresenterDelegate {
         
         invistButton.layer.cornerRadius = 25
         invistButton.layer.masksToBounds = true
-        invistButton.setBackgroundImage( UIImage(color: #colorLiteral(red: 1, green: 0.2251740098, blue: 0.1551215351, alpha: 1), size: invistButton.frame.size), for: .normal)
+        invistButton.setBackgroundImage( UIImage(color: #colorLiteral(red: 0.89276582, green: 0.1277235746, blue: 0, alpha: 1), size: invistButton.frame.size), for: .normal)
         invistButton.setBackgroundImage( UIImage(color: #colorLiteral(red: 0.944691956, green: 0.5485198498, blue: 0.535849154, alpha: 1), size: invistButton.frame.size), for: .highlighted)
     }
     
