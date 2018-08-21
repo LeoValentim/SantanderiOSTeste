@@ -11,10 +11,10 @@ import UIKit
 class FormTableViewController: UITableViewController {
     
     var presenter: FormPresenter! = FormPresenter(with: FormModelRemote.init(with: APILayer()))
-    var cells: [Cell] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.shadowImage = UIImage()
         
         presenter.delegate = self
         tableView.dataSource = presenter
@@ -34,7 +34,7 @@ extension FormTableViewController: FormPresenterDelegate {
     func didValidateFields(_ isValid: Bool) {
         self.tableView.reloadData()
         if isValid {
-            self.performSegue(withIdentifier: "TabBarController", sender: self)
+            self.performSegue(withIdentifier: "sendSegue", sender: self)
         }
     }
     

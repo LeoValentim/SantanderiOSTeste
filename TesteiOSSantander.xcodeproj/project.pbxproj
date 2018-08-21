@@ -26,6 +26,24 @@
 		044562F8212A7358009915B1 /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044562F7212A7358009915B1 /* UIImage+Color.swift */; };
 		044562FA212A883A009915B1 /* UIString+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044562F9212A883A009915B1 /* UIString+Validation.swift */; };
 		04560251212BB552004D4723 /* FundosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04560250212BB552004D4723 /* FundosViewController.swift */; };
+		04560253212BBBCB004D4723 /* Fund.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04560252212BBBCB004D4723 /* Fund.swift */; };
+		04560255212BBC6A004D4723 /* FundModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04560254212BBC6A004D4723 /* FundModels.swift */; };
+		04560257212BBF95004D4723 /* FundPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04560256212BBF95004D4723 /* FundPresenter.swift */; };
+		04560259212BCDDE004D4723 /* FundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04560258212BCDDE004D4723 /* FundTableViewCell.swift */; };
+		0456025A212BD70F004D4723 /* DINEngschriftStd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0456024C212BA4A6004D4723 /* DINEngschriftStd.otf */; };
+		0456025B212BD70F004D4723 /* DINMittelschriftStd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0456024E212BA4A8004D4723 /* DINMittelschriftStd.otf */; };
+		0456025C212BD70F004D4723 /* DINNeuzeitGroteskStd-BdCond.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0456024D212BA4A7004D4723 /* DINNeuzeitGroteskStd-BdCond.otf */; };
+		0456025D212BD70F004D4723 /* DINNeuzeitGroteskStd-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04560249212BA4A4004D4723 /* DINNeuzeitGroteskStd-Light.otf */; };
+		0456025E212BD70F004D4723 /* DINPro-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0456024B212BA4A6004D4723 /* DINPro-Black.otf */; };
+		0456025F212BD70F004D4723 /* DINPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04560248212BA4A3004D4723 /* DINPro-Bold.otf */; };
+		04560260212BD70F004D4723 /* DINPro-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0456024F212BA4A9004D4723 /* DINPro-Light.otf */; };
+		04560261212BD70F004D4723 /* DINPro-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04560247212BA4A2004D4723 /* DINPro-Medium.otf */; };
+		04560262212BD70F004D4723 /* DINPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0456024A212BA4A5004D4723 /* DINPro-Regular.otf */; };
+		04560268212BF38A004D4723 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04560267212BF38A004D4723 /* MessageViewController.swift */; };
+		0456026B212BF5B9004D4723 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04560269212BF5B9004D4723 /* TabBarItem.swift */; };
+		0456026C212BF5B9004D4723 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456026A212BF5B9004D4723 /* TabBar.swift */; };
+		0456026E212BF6D9004D4723 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456026D212BF6D9004D4723 /* TabBarController.swift */; };
+		04560270212BF999004D4723 /* ScrollingTabBarAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456026F212BF998004D4723 /* ScrollingTabBarAnimation.swift */; };
 		4D38330E1397D22C1BCB30F3 /* Pods_TesteiOSSantanderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AB2DD8A0C215313F83207B /* Pods_TesteiOSSantanderTests.framework */; };
 		C83D164FC528656F55BBCAF7 /* Pods_TesteiOSSantander.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD56B225F01AA299BEF32F4 /* Pods_TesteiOSSantander.framework */; };
 /* End PBXBuildFile section */
@@ -73,6 +91,15 @@
 		0456024E212BA4A8004D4723 /* DINMittelschriftStd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DINMittelschriftStd.otf; sourceTree = "<group>"; };
 		0456024F212BA4A9004D4723 /* DINPro-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Light.otf"; sourceTree = "<group>"; };
 		04560250212BB552004D4723 /* FundosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundosViewController.swift; sourceTree = "<group>"; };
+		04560252212BBBCB004D4723 /* Fund.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fund.swift; sourceTree = "<group>"; };
+		04560254212BBC6A004D4723 /* FundModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundModels.swift; sourceTree = "<group>"; };
+		04560256212BBF95004D4723 /* FundPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundPresenter.swift; sourceTree = "<group>"; };
+		04560258212BCDDE004D4723 /* FundTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundTableViewCell.swift; sourceTree = "<group>"; };
+		04560267212BF38A004D4723 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		04560269212BF5B9004D4723 /* TabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		0456026A212BF5B9004D4723 /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		0456026D212BF6D9004D4723 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		0456026F212BF998004D4723 /* ScrollingTabBarAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollingTabBarAnimation.swift; sourceTree = "<group>"; };
 		1CD56B225F01AA299BEF32F4 /* Pods_TesteiOSSantander.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TesteiOSSantander.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E63489B81ECC4FAECA34BF2 /* Pods-TesteiOSSantanderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TesteiOSSantanderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TesteiOSSantanderTests/Pods-TesteiOSSantanderTests.release.xcconfig"; sourceTree = "<group>"; };
 		648E7604E840E6230DC5E099 /* Pods-TesteiOSSantander.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TesteiOSSantander.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TesteiOSSantander/Pods-TesteiOSSantander.debug.xcconfig"; sourceTree = "<group>"; };
@@ -128,7 +155,7 @@
 				0413C578211F6D1C00DF9D0C /* Main.storyboard */,
 				044562EC212A2AEF009915B1 /* Models */,
 				0413C597211F80FC00DF9D0C /* Scenes */,
-				044562E0212A0587009915B1 /* Networking */,
+				044562E0212A0587009915B1 /* Services */,
 				044562E3212A0AE2009915B1 /* Utils */,
 				04D74D6E21208EB8009B89AC /* Assets */,
 				0413C57D211F6D1E00DF9D0C /* LaunchScreen.storyboard */,
@@ -149,6 +176,8 @@
 		0413C594211F7E5100DF9D0C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0456026A212BF5B9004D4723 /* TabBar.swift */,
+				04560269212BF5B9004D4723 /* TabBarItem.swift */,
 				0413C595211F7E9100DF9D0C /* CustomTextField.swift */,
 				044562F5212A45F0009915B1 /* RadioButton.swift */,
 			);
@@ -158,8 +187,10 @@
 		0413C597211F80FC00DF9D0C /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				0456026D212BF6D9004D4723 /* TabBarController.swift */,
+				04560246212BA0F9004D4723 /* Fund */,
 				0413C598211F813D00DF9D0C /* Form */,
-				04560246212BA0F9004D4723 /* Fundos */,
+				04560266212BF373004D4723 /* Message */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -176,13 +207,13 @@
 			path = Form;
 			sourceTree = "<group>";
 		};
-		044562E0212A0587009915B1 /* Networking */ = {
+		044562E0212A0587009915B1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				044562E1212A08F2009915B1 /* NetworkLayer.swift */,
 				044562E6212A0F6D009915B1 /* APILayer.swift */,
 			);
-			path = Networking;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		044562E3212A0AE2009915B1 /* Utils */ = {
@@ -190,6 +221,7 @@
 			children = (
 				0413C594211F7E5100DF9D0C /* Views */,
 				044562E8212A118E009915B1 /* Constants.swift */,
+				0456026F212BF998004D4723 /* ScrollingTabBarAnimation.swift */,
 				044562F7212A7358009915B1 /* UIImage+Color.swift */,
 				044562F9212A883A009915B1 /* UIString+Validation.swift */,
 			);
@@ -200,16 +232,28 @@
 			isa = PBXGroup;
 			children = (
 				044562ED212A2B22009915B1 /* Form.swift */,
+				04560252212BBBCB004D4723 /* Fund.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		04560246212BA0F9004D4723 /* Fundos */ = {
+		04560246212BA0F9004D4723 /* Fund */ = {
 			isa = PBXGroup;
 			children = (
 				04560250212BB552004D4723 /* FundosViewController.swift */,
+				04560258212BCDDE004D4723 /* FundTableViewCell.swift */,
+				04560254212BBC6A004D4723 /* FundModels.swift */,
+				04560256212BBF95004D4723 /* FundPresenter.swift */,
 			);
-			path = Fundos;
+			path = Fund;
+			sourceTree = "<group>";
+		};
+		04560266212BF373004D4723 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				04560267212BF38A004D4723 /* MessageViewController.swift */,
+			);
+			path = Message;
 			sourceTree = "<group>";
 		};
 		04D74D6E21208EB8009B89AC /* Assets */ = {
@@ -341,6 +385,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0456025A212BD70F004D4723 /* DINEngschriftStd.otf in Resources */,
+				0456025B212BD70F004D4723 /* DINMittelschriftStd.otf in Resources */,
+				0456025C212BD70F004D4723 /* DINNeuzeitGroteskStd-BdCond.otf in Resources */,
+				0456025D212BD70F004D4723 /* DINNeuzeitGroteskStd-Light.otf in Resources */,
+				0456025E212BD70F004D4723 /* DINPro-Black.otf in Resources */,
+				0456025F212BD70F004D4723 /* DINPro-Bold.otf in Resources */,
+				04560260212BD70F004D4723 /* DINPro-Light.otf in Resources */,
+				04560261212BD70F004D4723 /* DINPro-Medium.otf in Resources */,
+				04560262212BD70F004D4723 /* DINPro-Regular.otf in Resources */,
 				0413C57F211F6D1E00DF9D0C /* LaunchScreen.storyboard in Resources */,
 				044562F4212A44A3009915B1 /* FormTableViewCell.xib in Resources */,
 				0413C57C211F6D1E00DF9D0C /* Assets.xcassets in Resources */,
@@ -429,6 +482,7 @@
 			files = (
 				044562E2212A08F2009915B1 /* NetworkLayer.swift in Sources */,
 				044562FA212A883A009915B1 /* UIString+Validation.swift in Sources */,
+				04560259212BCDDE004D4723 /* FundTableViewCell.swift in Sources */,
 				044562DF212A032E009915B1 /* FormTableViewController.swift in Sources */,
 				044562F6212A45F0009915B1 /* RadioButton.swift in Sources */,
 				0413C575211F6D1C00DF9D0C /* AppDelegate.swift in Sources */,
@@ -436,9 +490,17 @@
 				044562F3212A44A3009915B1 /* FormTableViewCell.swift in Sources */,
 				044562E7212A0F6D009915B1 /* APILayer.swift in Sources */,
 				044562F8212A7358009915B1 /* UIImage+Color.swift in Sources */,
+				04560253212BBBCB004D4723 /* Fund.swift in Sources */,
 				0413C596211F7E9100DF9D0C /* CustomTextField.swift in Sources */,
+				0456026B212BF5B9004D4723 /* TabBarItem.swift in Sources */,
+				04560270212BF999004D4723 /* ScrollingTabBarAnimation.swift in Sources */,
+				0456026E212BF6D9004D4723 /* TabBarController.swift in Sources */,
 				044562DD2129FDA5009915B1 /* FormModels.swift in Sources */,
+				0456026C212BF5B9004D4723 /* TabBar.swift in Sources */,
+				04560255212BBC6A004D4723 /* FundModels.swift in Sources */,
+				04560268212BF38A004D4723 /* MessageViewController.swift in Sources */,
 				044562EE212A2B22009915B1 /* Form.swift in Sources */,
+				04560257212BBF95004D4723 /* FundPresenter.swift in Sources */,
 				044562E9212A118E009915B1 /* Constants.swift in Sources */,
 				044562EB212A1336009915B1 /* FormPresenter.swift in Sources */,
 			);

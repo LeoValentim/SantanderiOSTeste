@@ -72,7 +72,7 @@ class FormTableViewCell: UITableViewCell {
         
         sendButton.layer.cornerRadius = 25
         sendButton.layer.masksToBounds = true
-        sendButton.setBackgroundImage( UIImage(color: #colorLiteral(red: 1, green: 0.2251740098, blue: 0.1551215351, alpha: 1), size: sendButton.frame.size), for: UIControlState.normal)
+        sendButton.setBackgroundImage( UIImage(color: #colorLiteral(red: 0.89276582, green: 0.1277235746, blue: 0, alpha: 1), size: sendButton.frame.size), for: UIControlState.normal)
         sendButton.setBackgroundImage( UIImage(color: #colorLiteral(red: 0.944691956, green: 0.5485198498, blue: 0.535849154, alpha: 1), size: sendButton.frame.size), for: UIControlState.highlighted)
         sendButton.setBackgroundImage( UIImage(color: #colorLiteral(red: 0.944691956, green: 0.5485198498, blue: 0.535849154, alpha: 1), size: sendButton.frame.size), for: UIControlState.selected)
         sendButton.addTarget(self, action: #selector(self.sendButtonAction), for: .touchUpInside)

@@ -10,4 +10,5 @@ import Foundation
 
 protocol NetworkLayer {
     func getCells(onSuccess: @escaping (Form?) -> Void, onFailure: @escaping (Error) -> Void)
+    func getFund(onSuccess: @escaping (Fund?) -> Void, onFailure: @escaping (Error) -> Void)
 }

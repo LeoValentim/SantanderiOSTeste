@@ -39,4 +39,8 @@ extension APILayer: NetworkLayer {
     func getCells(onSuccess: @escaping (Form?) -> Void, onFailure: @escaping (Error) -> Void) {
         APILayer.get("\(Constants.Url.API.rawValue)/cells.json", model: Form.self, onSuccess: onSuccess, onFailure: onFailure)
     }
+    
+    func getFund(onSuccess: @escaping (Fund?) -> Void, onFailure: @escaping (Error) -> Void) {
+        APILayer.get("\(Constants.Url.API.rawValue)/fund.json", model: Fund.self, onSuccess: onSuccess, onFailure: onFailure)
+    }
 }
