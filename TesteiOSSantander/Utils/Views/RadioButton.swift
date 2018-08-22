@@ -29,7 +29,7 @@ class RadioButton: UIView {
     
     lazy var label: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 16, weight: UIFont.Weight.regular)
+        label.font = UIFont(name: "DINPro-Regular", size: 16)
         label.textColor = #colorLiteral(red: 0.6745098039, green: 0.6745098039, blue: 0.6745098039, alpha: 1)
         label.text = labelText
         return label

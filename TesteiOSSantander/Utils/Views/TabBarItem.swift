@@ -31,7 +31,7 @@ class TabBarItem: UIView {
             self.titlaLabel = UILabel()
             self.titlaLabel.text = title
             self.titlaLabel.textAlignment = .center
-            self.titlaLabel.font = UIFont.systemFont(ofSize: 16, weight: UIFont.Weight.light)
+            self.titlaLabel.font = UIFont(name: "DINPro-Medium", size: 16)
             self.titlaLabel.textColor = self.tintColor
             
             self.addSubview(self.titlaLabel)

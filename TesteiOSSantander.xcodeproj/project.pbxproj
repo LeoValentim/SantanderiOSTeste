@@ -44,6 +44,8 @@
 		0456026C212BF5B9004D4723 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456026A212BF5B9004D4723 /* TabBar.swift */; };
 		0456026E212BF6D9004D4723 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456026D212BF6D9004D4723 /* TabBarController.swift */; };
 		04560270212BF999004D4723 /* ScrollingTabBarAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456026F212BF998004D4723 /* ScrollingTabBarAnimation.swift */; };
+		04E452DA212CFF0E00481A68 /* UIView+AnchorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E452D9212CFF0E00481A68 /* UIView+AnchorPoint.swift */; };
+		04E452DC212D138E00481A68 /* MaskedCustomField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E452DB212D138E00481A68 /* MaskedCustomField.swift */; };
 		4D38330E1397D22C1BCB30F3 /* Pods_TesteiOSSantanderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AB2DD8A0C215313F83207B /* Pods_TesteiOSSantanderTests.framework */; };
 		C83D164FC528656F55BBCAF7 /* Pods_TesteiOSSantander.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD56B225F01AA299BEF32F4 /* Pods_TesteiOSSantander.framework */; };
 /* End PBXBuildFile section */
@@ -100,6 +102,8 @@
 		0456026A212BF5B9004D4723 /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		0456026D212BF6D9004D4723 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		0456026F212BF998004D4723 /* ScrollingTabBarAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollingTabBarAnimation.swift; sourceTree = "<group>"; };
+		04E452D9212CFF0E00481A68 /* UIView+AnchorPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AnchorPoint.swift"; sourceTree = "<group>"; };
+		04E452DB212D138E00481A68 /* MaskedCustomField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskedCustomField.swift; sourceTree = "<group>"; };
 		1CD56B225F01AA299BEF32F4 /* Pods_TesteiOSSantander.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TesteiOSSantander.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E63489B81ECC4FAECA34BF2 /* Pods-TesteiOSSantanderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TesteiOSSantanderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TesteiOSSantanderTests/Pods-TesteiOSSantanderTests.release.xcconfig"; sourceTree = "<group>"; };
 		648E7604E840E6230DC5E099 /* Pods-TesteiOSSantander.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TesteiOSSantander.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TesteiOSSantander/Pods-TesteiOSSantander.debug.xcconfig"; sourceTree = "<group>"; };
@@ -180,6 +184,7 @@
 				04560269212BF5B9004D4723 /* TabBarItem.swift */,
 				0413C595211F7E9100DF9D0C /* CustomTextField.swift */,
 				044562F5212A45F0009915B1 /* RadioButton.swift */,
+				04E452DB212D138E00481A68 /* MaskedCustomField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,8 +193,8 @@
 			isa = PBXGroup;
 			children = (
 				0456026D212BF6D9004D4723 /* TabBarController.swift */,
-				04560246212BA0F9004D4723 /* Fund */,
 				0413C598211F813D00DF9D0C /* Form */,
+				04560246212BA0F9004D4723 /* Fund */,
 				04560266212BF373004D4723 /* Message */,
 			);
 			path = Scenes;
@@ -224,6 +229,7 @@
 				0456026F212BF998004D4723 /* ScrollingTabBarAnimation.swift */,
 				044562F7212A7358009915B1 /* UIImage+Color.swift */,
 				044562F9212A883A009915B1 /* UIString+Validation.swift */,
+				04E452D9212CFF0E00481A68 /* UIView+AnchorPoint.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -418,6 +424,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TesteiOSSantander/Pods-TesteiOSSantander-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AKMaskField/AKMaskField.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Cartography/Cartography.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
@@ -426,6 +433,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AKMaskField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cartography.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
@@ -484,7 +492,9 @@
 				044562FA212A883A009915B1 /* UIString+Validation.swift in Sources */,
 				04560259212BCDDE004D4723 /* FundTableViewCell.swift in Sources */,
 				044562DF212A032E009915B1 /* FormTableViewController.swift in Sources */,
+				04E452DA212CFF0E00481A68 /* UIView+AnchorPoint.swift in Sources */,
 				044562F6212A45F0009915B1 /* RadioButton.swift in Sources */,
+				04E452DC212D138E00481A68 /* MaskedCustomField.swift in Sources */,
 				0413C575211F6D1C00DF9D0C /* AppDelegate.swift in Sources */,
 				04560251212BB552004D4723 /* FundosViewController.swift in Sources */,
 				044562F3212A44A3009915B1 /* FormTableViewCell.swift in Sources */,

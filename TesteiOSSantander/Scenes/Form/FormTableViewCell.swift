@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import AKMaskField
 
 class FormTableViewCell: UITableViewCell {
 
     @IBOutlet weak var textField: CustomTextField!
+    @IBOutlet weak var maskedTextField: MaskedCustomField!
     @IBOutlet weak var field: UILabel!
     @IBOutlet weak var radioButton: RadioButton!
     @IBOutlet weak var topConstraint: NSLayoutConstraint!
@@ -27,6 +29,7 @@ class FormTableViewCell: UITableViewCell {
             radioButton.isHidden = true
             field.isHidden = true
             textField.isHidden = true
+            maskedTextField.isHidden = true
             sendButton.isHidden = true
             
             switch model?.type {
@@ -38,17 +41,27 @@ class FormTableViewCell: UITableViewCell {
                     self.didChangeSelection?(isSelected)
                 }
             case .field?:
-                textField.isHidden = false
-                textField.text = model?.value
-                textField.labelText = model?.message
-                textField.isValid = model?.isValid
                 switch model?.typefield {
                 case .email?:
+                    textField.isHidden = false
+                    textField.text = model?.value
+                    textField.labelText = model?.message
+                    textField.isValid = model?.isValid
                     textField.keyboardType = .emailAddress
                     break
                 case .telNumber?:
-                    textField.keyboardType = .phonePad
+                    maskedTextField.isHidden = false
+                    maskedTextField.labelText = model?.message
+                    maskedTextField.isValid = model?.isValid
+                    maskedTextField.keyboardType = .phonePad
+                    maskedTextField.maskExpression = "({dd}) {ddddd}-{dddd}"
+                    maskedTextField.maskTemplate = "(  )      -    "
+                    maskedTextField.text = model?.value
                 case .text?:
+                    textField.isHidden = false
+                    textField.text = model?.value
+                    textField.labelText = model?.message
+                    textField.isValid = model?.isValid
                     textField.keyboardType = .asciiCapable
                 default:
                     break
@@ -69,6 +82,7 @@ class FormTableViewCell: UITableViewCell {
         super.awakeFromNib()
         
         textField.delegate = self
+        maskedTextField.maskDelegate = self
         
         sendButton.layer.cornerRadius = 25
         sendButton.layer.masksToBounds = true
@@ -102,5 +116,20 @@ extension FormTableViewCell: UITextFieldDelegate {
             didChangeValue?(updatedText)
         }
         return true
+    }
+}
+
+extension FormTableViewCell: AKMaskFieldDelegate {
+    func maskField(_ maskField: AKMaskField, didChangedWithEvent event: AKMaskFieldEvent) {
+        if event != AKMaskFieldEvent.error {
+            
+            if let text = maskField.text {
+                if model?.typefield == .telNumber {
+                    didChangeValue?(text.numbers)
+                } else {
+                    didChangeValue?(text)
+                }
+            }
+        }
     }
 }

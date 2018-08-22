@@ -1,15 +1,16 @@
 //
-//  CustomTextField.swift
+//  MaskedCustomField.swift
 //  TesteiOSSantander
 //
-//  Created by Mac on 11/08/2018.
+//  Created by Mac on 22/08/2018.
 //  Copyright © 2018 Leo Valentim. All rights reserved.
 //
 
 import UIKit
+import AKMaskField
 import Cartography
 
-class CustomTextField: UITextField {
+class MaskedCustomField: AKMaskField {
     
     @IBInspectable var labelText: String? {
         didSet {

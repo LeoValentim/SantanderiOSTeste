@@ -8,6 +8,7 @@ target 'TesteiOSSantander' do
   pod 'Alamofire', '~> 4.7'
   pod 'SwiftMessageBar', '~> 4.2'
   pod 'IQKeyboardManagerSwift', '~> 5.0'
+  pod 'AKMaskField', '~> 2.0'
 
   target 'TesteiOSSantanderTests' do
     inherit! :search_paths

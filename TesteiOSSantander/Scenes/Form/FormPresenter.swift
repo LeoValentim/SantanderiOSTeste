@@ -72,13 +72,19 @@ class FormPresenter: NSObject {
                 switch cell.typefield {
                 case .email?:
                     model.cells[index].isValid = cell.value?.isValidEmail == true
-                    isValid = cell.value?.isValidEmail == true
+                    if cell.value?.isValidEmail != true {
+                        isValid = false
+                    }
                 case .telNumber?:
                     model.cells[index].isValid = !(cell.value?.isEmpty != false)
-                    isValid = !(cell.value?.isEmpty != false)
+                    if cell.value?.isEmpty != false {
+                        isValid = false
+                    }
                 case .text?:
                     model.cells[index].isValid = !(cell.value?.isEmpty != false)
-                    isValid = !(cell.value?.isEmpty != false)
+                    if cell.value?.isEmpty != false {
+                        isValid = false
+                    }
                 default:
                     break
                 }
